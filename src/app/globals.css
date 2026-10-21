@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #111111;
+  --gold: #c9a84c;
+  --text: #f5f5f5;
+  --muted: #8a8a8a;
+  --header-h: 72px;
+  color-scheme: dark;
+}
+
+html {
+  background: var(--bg);
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-h);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+:focus-visible {
+  outline: 1px solid var(--gold);
+  outline-offset: 4px;
+}
+
+@layer components {
+  /* Etiquetas pequeñas: Jost en mayúsculas con tracking amplio. */
+  .label {
+    @apply font-body text-[0.6875rem] uppercase tracking-label text-muted;
+  }
+
+  .hairline {
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.6;
+  }
+
+  .container-site {
+    @apply mx-auto w-full max-w-site px-4 sm:px-8 lg:px-12;
+  }
+
+  .roman {
+    @apply font-display text-2xl text-gold;
+  }
+
+  .btn-line {
+    @apply inline-flex items-center gap-3 border border-gold/70 px-6 py-3 font-body text-[0.6875rem] uppercase tracking-label text-text transition-colors duration-300;
+  }
+}
+
+/* ---------- Grano fino sobre las fotos ---------- */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image: url("/textures/grain.png");
+  background-size: 64px 64px;
+}
+
+/* ---------- Movimiento 1: el rombo del WATS se traza en oro y luego aparecen las letras ---------- */
+.wats-draw {
+  /* El polígono declara pathLength="1". */
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: wats-stroke 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0.2s forwards;
+}
+
+.wats-fade {
+  opacity: 0;
+  animation: wats-fade 0.9s ease-out forwards;
+}
+
+.wats-fade--geometry {
+  animation-delay: 0.6s;
+}
+
+.wats-fade--letters {
+  animation-delay: 1.7s;
+}
+
+@keyframes wats-stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes wats-fade {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---------- Movimiento 2: puertas ---------- */
+.door-img {
+  filter: grayscale(1) contrast(1.05) brightness(0.7);
+  transition: filter 0.7s ease, transform 1.2s ease;
+}
+
+@media (min-width: 768px) {
+  .doors .door {
+    flex: 1 1 0%;
+    transition: flex-grow 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .doors .door:hover,
+  .doors .door:focus-visible {
+    flex-grow: 1.5;
+  }
+  .doors .door:hover .door-img,
+  .doors .door:focus-visible .door-img {
+    filter: grayscale(0) contrast(1) brightness(0.8);
+  }
+}
+
+/* ---------- Movimiento 3: secciones que aparecen al hacer scroll ---------- */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Logos de marcas ---------- */
+.logo-white {
+  filter: brightness(0) invert(1);
+}
+
+.logo-mono {
+  filter: grayscale(1) brightness(1.1);
+}
+
+/* ---------- Mapa en tono oscuro ---------- */
+.map-dark {
+  filter: grayscale(1) invert(0.9) contrast(0.85) brightness(0.9);
+}
+
+/* ---------- prefers-reduced-motion: apaga los tres movimientos ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .wats-draw {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  .wats-fade {
+    animation: none;
+    opacity: 1;
+  }
+  .doors .door,
+  .door-img {
+    transition: none !important;
+  }
+  .doors .door:hover,
+  .doors .door:focus-visible {
+    flex-grow: 1 !important;
+  }
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
