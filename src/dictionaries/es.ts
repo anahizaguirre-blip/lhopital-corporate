@@ -63,7 +63,7 @@ const es: Dictionary = {
   craft: {
     headline: "Dos industrias. Un solo Standard.",
     body: "Un bombero que entra a una estructura y un motociclista que toma la carretera eligen exponerse. Nuestro trabajo es el mismo en ambos casos: protegerlos. Desde 2007 nos dedicamos de tiempo completo al equipo de protección personal. Lhopital nació en 2021 para llevar ese criterio a dos mundos que lo exigen.",
-    seals: { road: "Ruta", emergency: "Emergencia", standard: "Estándar" },
+    seals: { road: "Ruta", emergency: "Rescate", standard: "Estándar" },
   },
   brands: {
     headline: "Marcas representadas",

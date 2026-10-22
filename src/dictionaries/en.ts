@@ -63,7 +63,7 @@ const en: Dictionary = {
   craft: {
     headline: "Two industries. One Standard.",
     body: "A firefighter entering a structure and a rider taking the highway both choose to be exposed. Our job is the same in both cases: protect them. We have worked full-time in personal protective equipment since 2007. Lhopital was founded in 2021 to bring that criterion to two worlds that demand it.",
-    seals: { road: "Road", emergency: "Emergency", standard: "Standard" },
+    seals: { road: "Road", emergency: "Rescue", standard: "Standard" },
   },
   brands: {
     headline: "Represented brands",
