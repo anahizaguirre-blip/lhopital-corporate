@@ -5,7 +5,7 @@ export default function Hero({ t, scrollLabel }: { t: Dictionary["hero"]; scroll
   return (
     <section
       id="inicio"
-      className="relative flex min-h-[100svh] flex-col md:min-h-[88svh] items-center justify-center px-4 pb-20 pt-[calc(var(--header-h)+2rem)] text-center"
+      className="relative flex min-h-[100svh] flex-col md:min-h-[88svh] items-center justify-center px-6 pb-20 pt-[calc(var(--header-h)+2rem)] text-center"
     >
       <WatsSeal variant="mark" animated className="h-auto w-[min(62vw,340px)] sm:w-[min(40vw,360px)]" />
       <h1 className="mt-8 font-display text-[2.25rem] leading-[1.05] tracking-[0.01em] sm:text-6xl">

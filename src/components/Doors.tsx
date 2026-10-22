@@ -35,7 +35,7 @@ function Door({ href, image, imageAlt, seal, t, objectPosition, priority = false
         <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-bg/10" aria-hidden="true" />
       </div>
 
-      <div className="relative z-10 flex flex-col items-start gap-5 px-6 pb-12 sm:px-10 md:pb-16 lg:px-14">
+      <div className="relative z-10 flex flex-col items-start gap-5 px-6 pb-12 sm:px-10 md:pb-16 lg:px-16">
         <Image src={seal} alt="" width={72} height={72} sizes="72px" className="h-16 w-16 object-contain" />
         <h3 className="font-display text-3xl leading-tight sm:text-4xl lg:text-5xl">{t.title}</h3>
         <div className="hairline w-12" aria-hidden="true" />
@@ -62,7 +62,7 @@ export default function Doors({ t, heading }: { t: Dictionary["doors"]; heading:
           imageAlt=""
           seal={CLD.sealFr}
           t={t.fr}
-          objectPosition="60% 50%"
+          objectPosition="60% 55%"
           priority
         />
         <div className="hidden w-px bg-gold/40 md:block" aria-hidden="true" />

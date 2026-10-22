@@ -22,7 +22,7 @@ export const DIVISION_URLS = {
 
 // Public IDs en Cloudinary (cuenta lhopital-moto, carpeta raíz).
 export const CLD = {
-  doorFr: "fr-corporate",
+  doorFr: "corporate-fr",
   doorMoto: "moto-corporate",
   monogramHorizontal: "corporate_horizontal_invertido",
   monogramVertical: "corporate_vertical_invertido",
@@ -64,38 +64,40 @@ export const SOCIAL = {
 } as const;
 
 export type BrandKey =
-  | "trelleborg"
-  | "pgi"
-  | "hexarmor"
   | "resqjack"
+  | "trelleborg"
+  | "supervac"
+  | "hexarmor"
   | "lion"
   | "genesis"
   | "turtle"
-  | "beeline"
   | "hedon"
+  | "beeline"
   | "tees";
 
 export type Brand = {
   key: BrandKey;
   name: string;
   division: "fr" | "moto";
-  // null = logo pendiente; se muestra el nombre como marcador.
-  logo: string | null;
+  // Public ID en Cloudinary; se recorta el margen transparente (e_trim) al pedirlo.
+  logo: string;
+  // Proporción ancho/alto del logo ya recortado. Sirve para darles a todos el mismo peso visual.
+  aspect: number;
   // Tratamiento CSS: "white" pinta todo el logo en blanco; "mono" lo pasa a escala de grises.
   treatment: "white" | "mono";
 };
 
+// El orden de este arreglo es el orden en pantalla.
 export const BRANDS: Brand[] = [
-  { key: "trelleborg", name: "Trelleborg", division: "fr", logo: null, treatment: "white" },
-  // El original trae fondo blanco sólido: Cloudinary lo vuelve transparente y recorta el margen.
-  { key: "pgi", name: "PGI", division: "fr", logo: "e_make_transparent:15/e_trim/PGI-Logo", treatment: "white" },
-  { key: "hexarmor", name: "HexArmor", division: "fr", logo: "HexArmor_navy", treatment: "white" },
-  { key: "resqjack", name: "Res-Q-Jack", division: "fr", logo: "2021_RQJ_Logo-with_tag-light_BG", treatment: "white" },
+  { key: "resqjack", name: "Res-Q-Jack", division: "fr", logo: "2021_RQJ_Logo-with_tag-light_BG", aspect: 6.9, treatment: "white" },
+  { key: "trelleborg", name: "Trelleborg", division: "fr", logo: "trelleborg", aspect: 2.39, treatment: "white" },
+  { key: "supervac", name: "SuperVac", division: "fr", logo: "supervac", aspect: 5.72, treatment: "white" },
+  { key: "hexarmor", name: "HexArmor", division: "fr", logo: "HexArmor_navy", aspect: 4.25, treatment: "white" },
   // En blanco el sello rojo se volvería un bloque liso y se perdería la cabeza del león.
-  { key: "lion", name: "LION", division: "fr", logo: "LION_Corporate_Logo_tagline_red_stamp_reverse", treatment: "mono" },
-  { key: "genesis", name: "Genesis Rescue Systems", division: "fr", logo: "GSR-Hrz-Logomark", treatment: "white" },
-  { key: "turtle", name: "Turtle Plastics", division: "fr", logo: "e_trim/TP-Primary-Logo-Nav-New-1-1170x694", treatment: "white" },
-  { key: "beeline", name: "Beeline", division: "moto", logo: "motoii", treatment: "white" },
-  { key: "hedon", name: "Hedon", division: "moto", logo: "hedon-white", treatment: "white" },
-  { key: "tees", name: "Lhopital Tee's", division: "moto", logo: "frase_horizontal_invertido", treatment: "white" },
+  { key: "lion", name: "LION", division: "fr", logo: "LION_Corporate_Logo_tagline_red_stamp_reverse", aspect: 2.35, treatment: "mono" },
+  { key: "genesis", name: "Genesis Rescue Systems", division: "fr", logo: "GSR-Hrz-Logomark", aspect: 3.93, treatment: "white" },
+  { key: "turtle", name: "Turtle Plastics", division: "fr", logo: "TP-Primary-Logo-Nav-New-1-1170x694", aspect: 3.16, treatment: "white" },
+  { key: "hedon", name: "Hedon", division: "moto", logo: "hedon-white", aspect: 4.31, treatment: "white" },
+  { key: "beeline", name: "Beeline", division: "moto", logo: "motoii", aspect: 2.83, treatment: "white" },
+  { key: "tees", name: "Lhopital Tee's", division: "moto", logo: "frase_horizontal_invertido", aspect: 4.52, treatment: "white" },
 ];

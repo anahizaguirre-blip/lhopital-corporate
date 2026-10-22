@@ -11,6 +11,12 @@
   color-scheme: dark;
 }
 
+@media (min-width: 768px) {
+  :root {
+    --header-h: 88px;
+  }
+}
+
 html {
   background: var(--bg);
   scroll-behavior: smooth;
@@ -49,7 +55,7 @@ body {
   }
 
   .container-site {
-    @apply mx-auto w-full max-w-site px-4 sm:px-8 lg:px-12;
+    @apply mx-auto w-full max-w-site px-6 sm:px-10 lg:px-16;
   }
 
   .roman {

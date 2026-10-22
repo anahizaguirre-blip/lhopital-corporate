@@ -18,7 +18,7 @@ const config: Config = {
         label: "0.28em",
       },
       maxWidth: {
-        site: "1280px",
+        site: "1440px",
       },
     },
   },

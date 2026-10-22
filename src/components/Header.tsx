@@ -110,15 +110,15 @@ export default function Header({ lang, nav, ui, altPath }: Props) {
           <Image
             src={CLD.monogramHorizontal}
             alt="Lhopital"
-            width={168}
-            height={39}
+            width={205}
+            height={48}
             priority
-            sizes="168px"
-            className="h-8 w-auto"
+            sizes="205px"
+            className="h-10 w-auto md:h-12"
           />
         </Link>
 
-        <nav aria-label={lang === "es" ? "Principal" : "Main"} className="hidden items-center gap-8 font-body text-[0.6875rem] uppercase tracking-label text-text lg:flex">
+        <nav aria-label={lang === "es" ? "Principal" : "Main"} className="hidden items-center gap-6 font-body text-xs font-medium uppercase tracking-[0.2em] text-text xl:gap-10 lg:flex">
           {navLinks}
           <span aria-hidden="true" className="h-4 w-px bg-gold/50" />
           {langToggle}

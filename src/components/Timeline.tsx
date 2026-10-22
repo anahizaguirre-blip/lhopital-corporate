@@ -9,7 +9,7 @@ export default function Timeline({ t }: { t: Dictionary["timeline"] }) {
           {t.headline}
         </h2>
 
-        <ol className="relative mt-16 grid gap-12 pl-8 lg:mt-24 lg:grid-cols-5 lg:gap-8 lg:pl-0 lg:pt-12">
+        <ol className="relative mt-16 grid gap-12 pl-8 lg:mt-24 lg:grid-cols-4 lg:gap-8 lg:pl-0 lg:pt-12">
           {/* Línea: vertical en móvil, horizontal en escritorio. */}
           <span aria-hidden="true" className="absolute bottom-2 left-[3px] top-2 w-px bg-gold/40 lg:hidden" />
           <span aria-hidden="true" className="absolute left-0 right-0 top-[3px] hidden h-px bg-gold/40 lg:block" />

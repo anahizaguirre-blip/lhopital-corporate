@@ -3,23 +3,28 @@ import type { Dictionary } from "@/dictionaries";
 import { BRANDS, type Brand } from "@/lib/site";
 import Reveal from "./Reveal";
 
+// Mismo peso visual para todos los logos: todos ocupan la misma área, así que un logo
+// alargado queda más ancho y bajo, y uno compacto más angosto y alto. Nunca se deforma.
+const LOGO_AREA = 11000; // px², equivale a ~210×52 para un logo de proporción 4:1
+
+function logoBox(aspect: number) {
+  const width = Math.round(Math.sqrt(LOGO_AREA * aspect));
+  return { width: `min(${width}px, 100%)`, aspectRatio: String(aspect) };
+}
+
 function BrandCell({ brand, meta }: { brand: Brand; meta: { origin: string; type: string } }) {
   return (
-    <li className="flex flex-col items-center gap-5 border-b border-r border-gold/15 px-4 py-10 text-center sm:px-6">
-      <div className="relative flex h-16 w-full max-w-[200px] items-center justify-center">
-        {brand.logo ? (
+    <li className="flex flex-col items-center justify-between gap-6 border-b border-r border-gold/15 px-5 py-10 text-center sm:px-6">
+      <div className="flex h-20 w-full items-center justify-center">
+        <div className="relative" style={logoBox(brand.aspect)}>
           <Image
-            src={brand.logo}
+            src={`e_trim/${brand.logo}`}
             alt={brand.name}
             fill
-            sizes="200px"
+            sizes="280px"
             className={`object-contain ${brand.treatment === "mono" ? "logo-mono" : "logo-white"}`}
           />
-        ) : (
-          <span className="flex h-full w-full items-center justify-center border border-dashed border-muted/50 px-2 font-body text-[0.625rem] uppercase tracking-[0.18em] text-muted">
-            [PENDIENTE: logo {brand.name}]
-          </span>
-        )}
+        </div>
       </div>
       <p className="font-body text-[0.6875rem] uppercase leading-relaxed tracking-[0.18em] text-muted">
         <span className="sr-only">{brand.name}: </span>
