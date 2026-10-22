@@ -29,22 +29,22 @@ const es: Dictionary = {
   doors: {
     fr: {
       title: "Lhopital Fire & Rescue",
-      line: "Equipo técnico para quienes responden a la emergencia. Rescate, EPP y HAZMAT bajo norma NFPA y EN.",
+      line: "Equipo técnico para profesionales de las emergencias. Rescate, EPP y HAZMAT bajo norma NFPA y EN.",
       button: "Entrar a FR",
     },
     moto: {
       title: "Lhopital Moto",
-      line: "Curaduría de equipo premium para quienes eligen la ruta. Hedon, Beeline Moto II y Lhopital Tee's.",
+      line: "Curaduría de equipo premium para motociclistas.",
       button: "Entrar a Moto",
     },
   },
   standard: {
-    headline: "No vendemos todo. Vendemos lo que pasa.",
+    headline: "The Standard is the standard even when nobody is watching.",
     body: "Cada marca que importamos supera un filtro antes de llegar a México. La mayoría no lo pasa. Las que sí, las representamos con capacitación directa del fabricante y garantía de fábrica. Ese filtro es el estándar.",
     pillars: [
       {
         title: "Norma",
-        text: "Fabricación certificada bajo estándares internacionales: NFPA, EN, ISO. Sin certificación, no hay conversación.",
+        text: "Fabricación certificada bajo estándares internacionales de cada industria. Sin certificación, no hay conversación.",
       },
       {
         title: "Origen",
@@ -56,7 +56,7 @@ const es: Dictionary = {
       },
       {
         title: "Permanencia",
-        text: "Garantía de fábrica, refacciones y servicio postventa. Vendemos para seguir ahí después.",
+        text: "Garantía de fábrica, refacciones y servicio postventa. No solo vendemos, somos tu aliado comercial.",
       },
     ],
   },
