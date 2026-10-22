@@ -3,7 +3,7 @@ import { WATS_PATHS } from "@/lib/wats-paths";
 const GOLD = "#C9A84C";
 const BG = "#111111";
 const TEXT = "#F5F5F5";
-const MUTED = "#8A8A8A";
+const MUTED = "#8C8C8C";
 
 type Props = {
   // "full": tarjeta completa con lema y LHOPITAL. "mark": solo el emblema octagonal.
@@ -13,13 +13,13 @@ type Props = {
   title?: string;
 };
 
-// Sello WATS reconstruido: geometría original, letras como trazos (sin <text>, sin máscara).
-// Las letras llevan un halo del color de fondo que corta las líneas finas detrás de ellas.
+// Sello WATS v3 (Cloudinary: wats_monogram_lhopital_v3_contornos), dibujado en línea para
+// poder animarlo. Letras como contornos: sin <text> ni máscara. Misma geometría que
+// public/brand/wats-seal.svg; los trazos vienen de src/lib/wats-paths.ts.
 export default function WatsSeal({ variant = "full", animated = false, className, title }: Props) {
   const viewBox = variant === "mark" ? "140 40 400 390" : "0 0 680 560";
   const geo = animated ? "wats-fade wats-fade--geometry" : undefined;
   const letters = animated ? "wats-fade wats-fade--letters" : undefined;
-  const halo = { stroke: BG, strokeWidth: 7, strokeLinejoin: "round" as const, paintOrder: "stroke" };
 
   return (
     <svg
@@ -63,22 +63,22 @@ export default function WatsSeal({ variant = "full", animated = false, className
         pathLength={1}
         className={animated ? "wats-draw" : undefined}
       />
-
-      <g fill="none" stroke={GOLD} className={geo}>
-        <polygon points="340,98 460,235 340,372 220,235" strokeWidth=".4" opacity=".4" />
-        <line x1="340" y1="78" x2="340" y2="392" strokeWidth=".4" opacity=".3" />
-        <line x1="200" y1="235" x2="480" y2="235" strokeWidth=".4" opacity=".3" />
-        <line x1="255" y1="152" x2="425" y2="318" strokeWidth=".3" opacity=".2" />
-        <line x1="425" y1="152" x2="255" y2="318" strokeWidth=".3" opacity=".2" />
-        <line x1="228" y1="235" x2="452" y2="235" strokeWidth=".8" />
-        <line x1="340" y1="118" x2="340" y2="352" strokeWidth=".8" opacity=".7" />
-      </g>
+      <polygon
+        points="340,98 460,235 340,372 220,235"
+        fill="none"
+        stroke={GOLD}
+        strokeWidth=".4"
+        opacity=".4"
+        className={geo}
+      />
 
       <g className={letters}>
-        <path d={WATS_PATHS.W} fill={TEXT} {...halo} />
-        <path d={WATS_PATHS.A} fill={GOLD} {...halo} />
-        <path d={WATS_PATHS.T} fill={GOLD} {...halo} />
-        <path d={WATS_PATHS.S} fill={TEXT} {...halo} />
+        <path d={WATS_PATHS.W} fill={TEXT} />
+        <path d={WATS_PATHS.A} fill={GOLD} />
+        <path d={WATS_PATHS.T} fill={GOLD} />
+        <path d={WATS_PATHS.S} fill={TEXT} />
+        {/* Diamante central: el punto donde se fija el estándar. */}
+        <polygon points="340,229 345,235 340,241 335,235" fill={GOLD} />
       </g>
 
       <g fill={GOLD} className={geo}>
@@ -98,14 +98,14 @@ export default function WatsSeal({ variant = "full", animated = false, className
         <g className={letters}>
           <g fill={GOLD}>
             <path d={WATS_PATHS.tagline} />
-            <circle cx="148" cy="441" r="1.8" opacity=".7" />
-            <circle cx="532" cy="441" r="1.8" opacity=".7" />
-          </g>
-          <g stroke={GOLD} strokeWidth=".4" opacity=".4">
-            <line x1="70" y1="478" x2="230" y2="478" />
-            <line x1="450" y1="478" x2="610" y2="478" />
+            <circle cx="186" cy="441.5" r="1.8" opacity=".7" />
+            <circle cx="494" cy="441.5" r="1.8" opacity=".7" />
           </g>
           <path d={WATS_PATHS.brand} fill={MUTED} />
+          <g stroke={GOLD} strokeWidth=".4" opacity=".4">
+            <line x1="110" y1="486.5" x2="270" y2="486.5" />
+            <line x1="410" y1="486.5" x2="570" y2="486.5" />
+          </g>
         </g>
       )}
     </svg>
