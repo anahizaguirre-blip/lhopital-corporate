@@ -24,31 +24,31 @@ const en: Dictionary = {
   hero: {
     headline: "We Are The Standard",
     subhead:
-      "A Mexican group importing and distributing premium protective equipment. Two industries. One criterion.",
+      "Mexican corporate group specializing in the import and distribution of premium personal protective equipment. Two industries. One Standard.",
   },
   doors: {
     fr: {
       title: "Lhopital Fire & Rescue",
-      line: "Technical equipment for those who answer the call. Rescue, PPE and HAZMAT built to NFPA and EN standards.",
+      line: "Technical gear for emergency response professionals. Rescue, PPE, and HAZMAT, compliant with NFPA and EN standards.",
       button: "Enter FR",
     },
     moto: {
       title: "Lhopital Moto",
-      line: "Curated premium gear for those who choose the road. Hedon, Beeline Moto II and Lhopital Tee's.",
+      line: "Curated premium gear for motorcyclists.",
       button: "Enter Moto",
     },
   },
   standard: {
-    headline: "We don't sell everything. We sell what passes.",
+    headline: "The Standard is the standard even when nobody is watching.",
     body: "Every brand we import clears a filter before it reaches Mexico. Most don't. Those that do, we represent with direct manufacturer training and factory warranty. That filter is the standard.",
     pillars: [
       {
         title: "Certification",
-        text: "Manufactured and certified to international standards: NFPA, EN, ISO. No certification, no conversation.",
+        text: "Manufacturing certified according to international industry standards. Without certification, there’s no conversation.",
       },
       {
         title: "Origin",
-        text: "We work directly with the manufacturer, as exclusive, master or authorized distributor. Never through intermediaries.",
+        text: "We work directly with the manufacturer—as an exclusive, master, or authorized distributor—never through intermediaries.",
       },
       {
         title: "Training",
@@ -56,12 +56,12 @@ const en: Dictionary = {
       },
       {
         title: "Permanence",
-        text: "Factory warranty, spare parts and after-sales service. We sell to still be there after the sale.",
+        text: "Factory warranty, spare parts, and after-sales service. We don’t just sell; we are your business partner.",
       },
     ],
   },
   craft: {
-    headline: "Two industries. One craft.",
+    headline: "Two industries. One Standard.",
     body: "A firefighter entering a structure and a rider taking the highway both choose to be exposed. Our job is the same in both cases: bringing them home. We have worked full-time in personal protective equipment since 2007. Lhopital was founded in 2021 to bring that criterion to two worlds that demand it.",
     seals: { road: "Road", emergency: "Emergency", standard: "Standard" },
   },

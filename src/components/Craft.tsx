@@ -5,18 +5,19 @@ import Reveal from "./Reveal";
 import WatsSeal from "./WatsSeal";
 
 export default function Craft({ t }: { t: Dictionary["craft"] }) {
+  // WATS al centro, entre las dos divisiones.
   const seals = [
     {
       label: t.seals.road,
       node: <Image src={CLD.sealMoto} alt="" width={160} height={160} sizes="160px" className="h-full w-full object-contain" />,
     },
     {
-      label: t.seals.emergency,
-      node: <Image src={CLD.sealFr} alt="" width={160} height={160} sizes="160px" className="h-full w-full object-contain" />,
-    },
-    {
       label: t.seals.standard,
       node: <WatsSeal variant="mark" className="h-full w-full" />,
+    },
+    {
+      label: t.seals.emergency,
+      node: <Image src={CLD.sealFr} alt="" width={160} height={160} sizes="160px" className="h-full w-full object-contain" />,
     },
   ];
 
