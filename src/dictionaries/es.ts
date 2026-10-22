@@ -71,7 +71,7 @@ const es: Dictionary = {
     meta: {
       resqjack: { origin: "EE. UU.", type: "Distribución exclusiva" },
       trelleborg: { origin: "Suecia", type: "Distribución exclusiva" },
-      supervac: { origin: "EE. UU.", type: "[PENDIENTE: tipo de distribución]" },
+      supervac: { origin: "EE. UU.", type: "Distribución exclusiva" },
       hexarmor: { origin: "EE. UU.", type: "Distribución autorizada" },
       lion: { origin: "EE. UU.", type: "Distribución autorizada" },
       genesis: { origin: "EE. UU.", type: "Distribución autorizada" },

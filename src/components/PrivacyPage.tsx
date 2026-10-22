@@ -25,7 +25,7 @@ export default function PrivacyPage({ lang }: { lang: Locale }) {
         lang={lang}
         t={t.footer}
         nav={t.nav}
-        groups={{ ...t.brands.groups, corporate: t.contact.cards.corporate.title }}
+        groups={t.brands.groups}
         isHome={false}
       />
     </>

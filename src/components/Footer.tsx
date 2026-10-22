@@ -61,7 +61,7 @@ type Props = {
   lang: Locale;
   t: Dictionary["footer"];
   nav: Dictionary["nav"];
-  groups: { fr: string; moto: string; corporate: string };
+  groups: { fr: string; moto: string };
   // En la portada los enlaces del menú son anclas; en páginas internas apuntan a la portada.
   isHome?: boolean;
 };
@@ -98,7 +98,7 @@ export default function Footer({ lang, t, nav, groups, isHome = true }: Props) {
           </nav>
 
           <nav aria-label={t.social} className="flex flex-wrap gap-x-8 gap-y-6">
-            {(["fr", "moto", "corporate"] as const).map((division) => (
+            {(["fr", "moto"] as const).map((division) => (
               <div key={division} className="flex flex-col gap-3">
                 <span className="font-body text-[0.625rem] uppercase tracking-[0.2em] text-muted">
                   {groups[division]}

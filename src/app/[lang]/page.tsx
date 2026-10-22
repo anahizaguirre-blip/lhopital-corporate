@@ -42,7 +42,7 @@ export default async function Home({ params }: Params) {
         lang={lang}
         t={t.footer}
         nav={t.nav}
-        groups={{ ...t.brands.groups, corporate: t.contact.cards.corporate.title }}
+        groups={t.brands.groups}
       />
     </>
   );

@@ -51,17 +51,19 @@ export const ADDRESS = {
 export type SocialNetwork = "instagram" | "facebook" | "youtube" | "linkedin";
 
 // Redes por división, en el orden en que aparecen en el footer.
-export const SOCIAL: Record<"fr" | "moto" | "corporate", { network: SocialNetwork; href: string }[]> = {
+export const SOCIAL: Record<"fr" | "moto", { network: SocialNetwork; href: string }[]> = {
   fr: [
     { network: "instagram", href: "https://www.instagram.com/lhopitalfr/" },
     { network: "facebook", href: "https://www.facebook.com/lhopitalfr" },
     { network: "youtube", href: "https://www.youtube.com/@LhopitalFR" },
+    { network: "linkedin", href: "https://www.linkedin.com/company/lhopital-fr/" },
   ],
   moto: [
     { network: "instagram", href: "https://instagram.com/lhopitalmx" },
     { network: "facebook", href: "https://facebook.com/lhopitalmx" },
+    { network: "youtube", href: "https://www.youtube.com/@lhopitalmx" },
+    { network: "linkedin", href: "https://www.linkedin.com/company/lhopital/" },
   ],
-  corporate: [{ network: "linkedin", href: "https://www.linkedin.com/company/lhopital-fr/" }],
 };
 
 export type BrandKey =

@@ -54,7 +54,7 @@ export function jsonLd(lang: Locale) {
         logo: `${SITE_URL}/og-image.png`,
         foundingDate: "2021",
         slogan: "We Are The Standard",
-        sameAs: [...SOCIAL.corporate, ...SOCIAL.fr, ...SOCIAL.moto].map((s) => s.href),
+        sameAs: [...SOCIAL.fr, ...SOCIAL.moto].map((s) => s.href),
         subOrganization: [
           {
             "@type": "Organization",
