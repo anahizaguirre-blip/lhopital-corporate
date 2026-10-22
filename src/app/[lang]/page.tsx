@@ -38,7 +38,12 @@ export default async function Home({ params }: Params) {
         <Credentials t={t.credentials} label={t.nav.respaldo} />
         <Contact t={t.contact} label={t.nav.contacto} />
       </main>
-      <Footer lang={lang} t={t.footer} groups={t.brands.groups} />
+      <Footer
+        lang={lang}
+        t={t.footer}
+        nav={t.nav}
+        groups={{ ...t.brands.groups, corporate: t.contact.cards.corporate.title }}
+      />
     </>
   );
 }

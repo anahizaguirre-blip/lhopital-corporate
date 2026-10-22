@@ -33,9 +33,7 @@ export const CLD = {
 export const CONTACT = {
   corporatePhone: { label: "+52 (55) 9462 1951", href: "tel:+525594621951" },
   frEmail: { label: "contacto@lhopital-fr.mx", href: "mailto:contacto@lhopital-fr.mx" },
-  frWhatsapp: { label: "+52 (33) 1977 4134", href: "https://wa.me/523319774134" },
   motoEmail: { label: "contacto@lhopital.mx", href: "mailto:contacto@lhopital.mx" },
-  motoPhone: { label: "+52 (56) 2162 7604", href: "tel:+525621627604" },
 } as const;
 
 export const ADDRESS = {
@@ -50,18 +48,21 @@ export const ADDRESS = {
   embedUrl: "https://www.google.com/maps?q=19.3204018,-99.1287753&z=16&output=embed",
 } as const;
 
-export const SOCIAL = {
+export type SocialNetwork = "instagram" | "facebook" | "youtube" | "linkedin";
+
+// Redes por división, en el orden en que aparecen en el footer.
+export const SOCIAL: Record<"fr" | "moto" | "corporate", { network: SocialNetwork; href: string }[]> = {
   fr: [
-    { label: "Instagram", href: "https://www.instagram.com/lhopitalfr/" },
-    { label: "Facebook", href: "https://www.facebook.com/lhopitalfr" },
-    { label: "YouTube", href: "https://www.youtube.com/@LhopitalFR" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/company/lhopital-fr/" },
+    { network: "instagram", href: "https://www.instagram.com/lhopitalfr/" },
+    { network: "facebook", href: "https://www.facebook.com/lhopitalfr" },
+    { network: "youtube", href: "https://www.youtube.com/@LhopitalFR" },
   ],
   moto: [
-    { label: "Instagram", href: "https://instagram.com/lhopitalmx" },
-    { label: "Facebook", href: "https://facebook.com/lhopitalmx" },
+    { network: "instagram", href: "https://instagram.com/lhopitalmx" },
+    { network: "facebook", href: "https://facebook.com/lhopitalmx" },
   ],
-} as const;
+  corporate: [{ network: "linkedin", href: "https://www.linkedin.com/company/lhopital-fr/" }],
+};
 
 export type BrandKey =
   | "resqjack"

@@ -54,7 +54,7 @@ export function jsonLd(lang: Locale) {
         logo: `${SITE_URL}/og-image.png`,
         foundingDate: "2021",
         slogan: "We Are The Standard",
-        sameAs: [...SOCIAL.fr, ...SOCIAL.moto].map((s) => s.href),
+        sameAs: [...SOCIAL.corporate, ...SOCIAL.fr, ...SOCIAL.moto].map((s) => s.href),
         subOrganization: [
           {
             "@type": "Organization",
@@ -117,14 +117,12 @@ export function jsonLd(lang: Locale) {
           },
           {
             "@type": "ContactPoint",
-            telephone: "+52 33 1977 4134",
             email: CONTACT.frEmail.label,
             contactType: "sales",
             name: "Lhopital Fire & Rescue",
           },
           {
             "@type": "ContactPoint",
-            telephone: "+52 56 2162 7604",
             email: CONTACT.motoEmail.label,
             contactType: "sales",
             name: "Lhopital Moto",

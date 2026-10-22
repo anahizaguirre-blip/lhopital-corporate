@@ -27,7 +27,6 @@ export type Dictionary = {
     intro: string;
     cards: Record<"corporate" | "fr" | "moto", { title: string; purpose: string }>;
     telLabel: string;
-    whatsappLabel: string;
     addressLabel: string;
     hoursLabel: string;
     hours: string;

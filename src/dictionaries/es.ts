@@ -117,7 +117,6 @@ const es: Dictionary = {
       moto: { title: "Moto", purpose: "Tienda, agencias y boutiques" },
     },
     telLabel: "Tel.",
-    whatsappLabel: "WhatsApp",
     addressLabel: "Dirección",
     hoursLabel: "Horario",
     hours: "Lunes a viernes 11:00–14:00 y 16:00–19:00 · Sábado 11:00–14:00",

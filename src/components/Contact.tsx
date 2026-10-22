@@ -2,7 +2,7 @@ import type { Dictionary } from "@/dictionaries";
 import { ADDRESS, CONTACT } from "@/lib/site";
 import Reveal from "./Reveal";
 
-type Line = { prefix?: string; label: string; href: string; external?: boolean };
+type Line = { prefix?: string; label: string; href: string };
 
 function Card({ title, purpose, lines }: { title: string; purpose: string; lines: Line[] }) {
   return (
@@ -15,7 +15,6 @@ function Card({ title, purpose, lines }: { title: string; purpose: string; lines
             {l.prefix && <span className="mr-2 text-muted">{l.prefix}</span>}
             <a
               href={l.href}
-              {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="underline decoration-gold/40 underline-offset-4 transition-colors hover:text-gold hover:decoration-gold"
             >
               {l.label}
@@ -46,15 +45,12 @@ export default function Contact({ t, label }: { t: Dictionary["contact"]; label:
           <Card
             title={t.cards.fr.title}
             purpose={t.cards.fr.purpose}
-            lines={[
-              { ...CONTACT.frEmail },
-              { prefix: t.whatsappLabel, ...CONTACT.frWhatsapp, external: true },
-            ]}
+            lines={[{ ...CONTACT.frEmail }]}
           />
           <Card
             title={t.cards.moto.title}
             purpose={t.cards.moto.purpose}
-            lines={[{ ...CONTACT.motoEmail }, { prefix: t.telLabel, ...CONTACT.motoPhone }]}
+            lines={[{ ...CONTACT.motoEmail }]}
           />
         </ul>
       </Reveal>
