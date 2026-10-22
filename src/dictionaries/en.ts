@@ -62,7 +62,7 @@ const en: Dictionary = {
   },
   craft: {
     headline: "Two industries. One Standard.",
-    body: "A firefighter entering a structure and a rider taking the highway both choose to be exposed. Our job is the same in both cases: bringing them home. We have worked full-time in personal protective equipment since 2007. Lhopital was founded in 2021 to bring that criterion to two worlds that demand it.",
+    body: "A firefighter entering a structure and a rider taking the highway both choose to be exposed. Our job is the same in both cases: protect them. We have worked full-time in personal protective equipment since 2007. Lhopital was founded in 2021 to bring that criterion to two worlds that demand it.",
     seals: { road: "Road", emergency: "Emergency", standard: "Standard" },
   },
   brands: {
@@ -70,7 +70,7 @@ const en: Dictionary = {
     groups: { fr: "Fire & Rescue", moto: "Moto" },
     meta: {
       resqjack: { origin: "USA", type: "Exclusive distribution" },
-      trelleborg: { origin: "Sweden", type: "Exclusive distribution" },
+      trelleborg: { origin: "Slovenia", type: "Exclusive distribution" },
       supervac: { origin: "USA", type: "Exclusive distribution" },
       hexarmor: { origin: "USA", type: "Authorized distribution" },
       lion: { origin: "USA", type: "Authorized distribution" },
