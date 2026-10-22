@@ -1,4 +1,4 @@
-# Lhopital Corporate — lhopital.com.mx
+# Lhopital Corporate — lhopitalcorp.mx
 
 Sitio corporativo de Lhopital S.A. de C.V. Dos trabajos: llevar a cada cliente a su división (Fire & Rescue o Moto) y presentar al corporativo ante fabricantes, gobierno, bancos y socios logísticos.
 

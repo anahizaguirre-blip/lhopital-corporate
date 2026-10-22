@@ -1,5 +1,6 @@
 // Aviso de privacidad de Lhopital, S.A. de C.V. Transcrito sin cambios de
 // 202610_AVISO_DE_PRIVACIDAD_lhopitalcorp.docx (última actualización: 22 de octubre de 2026).
+// Sección XI actualizada el 22 de octubre de 2026 con el texto sobre cookies de Google Maps.
 
 export type Run = { text: string; bold?: boolean };
 export type PrivacyBlock =
@@ -416,7 +417,39 @@ export const PRIVACY_ES: PrivacyBlock[] = [
     "type": "p",
     "runs": [
       {
-        "text": "El Sitio no utiliza cookies ni otras tecnologías de rastreo con fines publicitarios o para identificar a sus visitantes. Como ocurre con la mayoría de los sitios web, el servidor que lo aloja puede registrar automáticamente información técnica de navegación (como dirección IP, tipo de navegador, fecha y hora de acceso) con fines de seguridad y funcionamiento del Sitio. Esta información no se utiliza para identificarle personalmente."
+        "text": "Lhopital no utiliza cookies propias ni otras tecnologías de rastreo con fines publicitarios o para identificar a los visitantes del Sitio."
+      }
+    ]
+  },
+  {
+    "type": "p",
+    "runs": [
+      {
+        "text": "Cookies de terceros.",
+        "bold": true
+      },
+      {
+        "text": " La sección de Contacto incluye un mapa interactivo de Google Maps, servicio proporcionado por Google LLC. Al cargarse el mapa, Google puede instalar sus propias cookies en su navegador y recibir información técnica como su dirección IP, el tipo de navegador y la página desde la que accede. Lhopital no tiene acceso a esta información ni control sobre ella; su tratamiento se rige por la Política de Privacidad de Google, disponible en policies.google.com/privacy."
+      }
+    ]
+  },
+  {
+    "type": "p",
+    "runs": [
+      {
+        "text": "Usted puede bloquear o eliminar las cookies desde la configuración de su navegador. Si lo hace, es posible que el mapa no se muestre correctamente, sin que ello afecte el resto del Sitio."
+      }
+    ]
+  },
+  {
+    "type": "p",
+    "runs": [
+      {
+        "text": "Datos de navegación.",
+        "bold": true
+      },
+      {
+        "text": " Como ocurre con la mayoría de los sitios web, el servidor que aloja el Sitio puede registrar automáticamente información técnica de navegación (como dirección IP, tipo de navegador, fecha y hora de acceso) con fines de seguridad y funcionamiento. Esta información no se utiliza para identificarle personalmente."
       }
     ]
   },

@@ -1,6 +1,6 @@
 // Datos del sitio que no cambian por idioma: enlaces, contactos, assets de Cloudinary.
 
-export const SITE_URL = "https://www.lhopital.com.mx";
+export const SITE_URL = "https://www.lhopitalcorp.mx";
 
 export const LOCALES = ["es", "en"] as const;
 export type Locale = (typeof LOCALES)[number];
