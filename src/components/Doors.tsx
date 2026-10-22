@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Dictionary } from "@/dictionaries";
 import { CLD, DIVISION_URLS } from "@/lib/site";
+import DoorsInView from "./DoorsInView";
 
 type DoorProps = {
   href: string;
@@ -55,6 +56,7 @@ export default function Doors({ t, heading }: { t: Dictionary["doors"]; heading:
       <h2 id="divisiones-title" className="sr-only">
         {heading}
       </h2>
+      <DoorsInView />
       <div className="doors flex flex-col md:h-[100svh] md:min-h-[640px] md:flex-row">
         <Door
           href={DIVISION_URLS.fr}

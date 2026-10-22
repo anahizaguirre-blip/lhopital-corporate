@@ -132,6 +132,13 @@ body {
   }
 }
 
+/* En móvil no hay hover: la foto pasa a color mientras cruza el centro de la pantalla (ver DoorsInView). */
+@media (max-width: 767px) {
+  .doors .door.is-in-view .door-img {
+    filter: grayscale(0) contrast(1) brightness(0.8);
+  }
+}
+
 /* ---------- Movimiento 3: secciones que aparecen al hacer scroll ---------- */
 .js .reveal {
   opacity: 0;
