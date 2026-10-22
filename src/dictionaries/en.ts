@@ -132,6 +132,7 @@ const en: Dictionary = {
   privacy: {
     title: "Privacy notice",
     back: "Back to home",
+    note: "This privacy notice is available in Spanish only.",
   },
 };
 

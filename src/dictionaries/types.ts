@@ -34,5 +34,5 @@ export type Dictionary = {
     mapTitle: string;
   };
   footer: { entity: string; privacy: string; signature: string; social: string };
-  privacy: { title: string; back: string };
+  privacy: { title: string; back: string; note?: string };
 };
