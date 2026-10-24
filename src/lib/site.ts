@@ -44,8 +44,10 @@ export const ADDRESS = {
   city: "Ciudad de México",
   lat: 19.3204018,
   lng: -99.1287753,
-  directionsUrl: "https://www.google.com/maps/place/Lhopital/@19.3204068,-99.1313556,17z",
-  embedUrl: "https://www.google.com/maps?q=19.3204018,-99.1287753&z=16&output=embed",
+  // Ficha de Google de Lhopital (Pedro Sainz de Baranda 139-Locación 25). Por cid se abre la ficha
+  // del negocio, con su botón de "Cómo llegar", en lugar de un pin suelto en las coordenadas.
+  directionsUrl: "https://www.google.com/maps?cid=17537037123778454437",
+  embedUrl: "https://maps.google.com/maps?cid=17537037123778454437&z=16&output=embed",
 } as const;
 
 export type SocialNetwork = "instagram" | "facebook" | "youtube" | "linkedin";
