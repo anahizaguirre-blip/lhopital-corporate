@@ -2,9 +2,9 @@ import type { Dictionary } from "./types";
 
 const es: Dictionary = {
   meta: {
-    title: "Lhopital | We Are The Standard — Corporativo de equipo de protección premium",
+    title: "Lhopital | Equipo de protección para bomberos y motociclistas",
     description:
-      "Lhopital es el corporativo mexicano detrás de Lhopital Fire & Rescue y Lhopital Moto. Importamos y distribuimos solo lo mejor en equipo de protección para bomberos, rescatistas y motociclistas.",
+      "Corporativo mexicano detrás de Lhopital Fire & Rescue y Lhopital Moto: equipo de protección premium para bomberos, rescatistas y motociclistas.",
     ogLocale: "es_MX",
   },
   ui: {
@@ -22,6 +22,7 @@ const es: Dictionary = {
     contacto: "Contacto",
   },
   hero: {
+    headlinePrefix: "Lhopital, equipo de protección premium:",
     headline: "We Are The Standard",
     subhead:
       "Corporativo mexicano de importación y distribución de equipo de protección premium. Dos industrias. Un solo criterio.",
@@ -31,11 +32,13 @@ const es: Dictionary = {
       title: "Lhopital Fire & Rescue",
       line: "Equipo técnico para profesionales de las emergencias. Rescate, EPP y HAZMAT bajo norma NFPA y EN.",
       button: "Entrar a FR",
+      imageAlt: "Bomberos estabilizando un autobús volcado con Res-Q-Jack",
     },
     moto: {
       title: "Lhopital Moto",
       line: "Curaduría de equipo premium para motociclistas.",
       button: "Entrar a Moto",
+      imageAlt: "Motociclistas con casco Hedon en un cruce en CDMX",
     },
   },
   standard: {

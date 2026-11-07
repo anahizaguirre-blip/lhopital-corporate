@@ -2,9 +2,9 @@ import type { Dictionary } from "./types";
 
 const en: Dictionary = {
   meta: {
-    title: "Lhopital | We Are The Standard — Premium protective equipment group",
+    title: "Lhopital | Protective equipment for firefighters and riders",
     description:
-      "Lhopital is the Mexican group behind Lhopital Fire & Rescue and Lhopital Moto. We import and distribute only the best protective equipment for firefighters, rescuers and riders.",
+      "Mexican group behind Lhopital Fire & Rescue and Lhopital Moto: premium protective equipment for firefighters, rescuers and riders.",
     ogLocale: "en_US",
   },
   ui: {
@@ -22,6 +22,7 @@ const en: Dictionary = {
     contacto: "Contact",
   },
   hero: {
+    headlinePrefix: "Lhopital, premium protective equipment:",
     headline: "We Are The Standard",
     subhead:
       "Mexican corporate group specializing in the import and distribution of premium personal protective equipment. Two industries. One Standard.",
@@ -31,11 +32,13 @@ const en: Dictionary = {
       title: "Lhopital Fire & Rescue",
       line: "Technical gear for emergency response professionals. Rescue, PPE, and HAZMAT, compliant with NFPA and EN standards.",
       button: "Enter FR",
+      imageAlt: "Firefighters stabilizing an overturned bus with Res-Q-Jack",
     },
     moto: {
       title: "Lhopital Moto",
       line: "Curated premium gear for motorcyclists.",
       button: "Enter Moto",
+      imageAlt: "Riders wearing Hedon helmets at an intersection in Mexico City",
     },
   },
   standard: {

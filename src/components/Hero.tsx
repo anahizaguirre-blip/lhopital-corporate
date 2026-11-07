@@ -9,6 +9,7 @@ export default function Hero({ t, scrollLabel }: { t: Dictionary["hero"]; scroll
     >
       <WatsSeal variant="mark" animated className="h-auto w-[min(62vw,340px)] sm:w-[min(40vw,360px)]" />
       <h1 className="mt-8 font-display text-[2.25rem] leading-[1.05] tracking-[0.01em] sm:text-6xl">
+        <span className="sr-only">{t.headlinePrefix} </span>
         {t.headline}
       </h1>
       <p className="mt-6 max-w-xl font-body text-[0.95rem] font-light leading-relaxed text-text/80 sm:text-base">

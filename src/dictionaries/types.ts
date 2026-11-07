@@ -1,13 +1,14 @@
 import type { BrandKey } from "@/lib/site";
 
-type Door = { title: string; line: string; button: string };
+type Door = { title: string; line: string; button: string; imageAlt: string };
 type TitledText = { title: string; text: string };
 
 export type Dictionary = {
   meta: { title: string; description: string; ogLocale: string };
   ui: { skip: string; menu: string; close: string; switchLanguage: string; home: string };
   nav: { estandar: string; divisiones: string; marcas: string; respaldo: string; contacto: string };
-  hero: { headline: string; subhead: string };
+  // headlinePrefix solo lo leen buscadores y lectores de pantalla; en pantalla se ve el lema.
+  hero: { headlinePrefix: string; headline: string; subhead: string };
   doors: { fr: Door; moto: Door };
   standard: { headline: string; body: string; pillars: TitledText[] };
   craft: {

@@ -61,7 +61,7 @@ export default function Doors({ t, heading }: { t: Dictionary["doors"]; heading:
         <Door
           href={DIVISION_URLS.fr}
           image={CLD.doorFr}
-          imageAlt=""
+          imageAlt={t.fr.imageAlt}
           seal={CLD.sealFr}
           t={t.fr}
           objectPosition="60% 55%"
@@ -72,7 +72,7 @@ export default function Doors({ t, heading }: { t: Dictionary["doors"]; heading:
         <Door
           href={DIVISION_URLS.moto}
           image={CLD.doorMoto}
-          imageAlt=""
+          imageAlt={t.moto.imageAlt}
           seal={CLD.sealMoto}
           t={t.moto}
           objectPosition="55% 50%"

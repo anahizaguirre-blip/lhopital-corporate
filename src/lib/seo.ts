@@ -51,7 +51,7 @@ export function jsonLd(lang: Locale) {
         name: "Lhopital S.A. de C.V.",
         alternateName: "Lhopital",
         url: SITE_URL,
-        logo: `${SITE_URL}/og-image.png`,
+        logo: `${SITE_URL}/logo.png`,
         foundingDate: "2021",
         slogan: "We Are The Standard",
         sameAs: [...SOCIAL.fr, ...SOCIAL.moto].map((s) => s.href),
