@@ -74,8 +74,6 @@ const es: Dictionary = {
       supervac: { origin: "EE. UU.", type: "Distribución exclusiva" },
       hexarmor: { origin: "EE. UU.", type: "Distribución autorizada" },
       lion: { origin: "EE. UU.", type: "Distribución autorizada" },
-      genesis: { origin: "EE. UU.", type: "Distribución autorizada" },
-      turtle: { origin: "EE. UU.", type: "Distribución autorizada" },
       hedon: { origin: "Reino Unido", type: "Distribución exclusiva" },
       beeline: { origin: "Reino Unido", type: "Distribuidor máster" },
       tees: { origin: "México", type: "Marca propia" },
@@ -96,7 +94,7 @@ const es: Dictionary = {
     items: [
       {
         title: "Técnica.",
-        text: "Licencias emitidas por los propios fabricantes e instituciones de formación: Genesis Rescue Systems, Corona Fire Department, LION University y Texas A&M TEEX. Capacitación anual en el extranjero desde 2014.",
+        text: "Licencias emitidas por los propios fabricantes e instituciones de formación: Corona Fire Department, LION University y Texas A&M TEEX. Capacitación anual en el extranjero desde 2014.",
       },
       {
         title: "Financiera.",

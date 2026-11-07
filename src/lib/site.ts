@@ -74,8 +74,6 @@ export type BrandKey =
   | "supervac"
   | "hexarmor"
   | "lion"
-  | "genesis"
-  | "turtle"
   | "hedon"
   | "beeline"
   | "tees";
@@ -100,8 +98,6 @@ export const BRANDS: Brand[] = [
   { key: "hexarmor", name: "HexArmor", division: "fr", logo: "HexArmor_navy", aspect: 4.25, treatment: "white" },
   // En blanco el sello rojo se volvería un bloque liso y se perdería la cabeza del león.
   { key: "lion", name: "LION", division: "fr", logo: "LION_Corporate_Logo_tagline_red_stamp_reverse", aspect: 2.35, treatment: "mono" },
-  { key: "genesis", name: "Genesis Rescue Systems", division: "fr", logo: "GSR-Hrz-Logomark", aspect: 3.93, treatment: "white" },
-  { key: "turtle", name: "Turtle Plastics", division: "fr", logo: "TP-Primary-Logo-Nav-New-1-1170x694", aspect: 3.16, treatment: "white" },
   { key: "hedon", name: "Hedon", division: "moto", logo: "hedon-white", aspect: 4.31, treatment: "white" },
   { key: "beeline", name: "Beeline", division: "moto", logo: "motoii", aspect: 2.83, treatment: "white" },
   { key: "tees", name: "Lhopital Tee's", division: "moto", logo: "frase_horizontal_invertido", aspect: 4.52, treatment: "white" },
