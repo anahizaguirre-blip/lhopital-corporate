@@ -97,7 +97,7 @@ const es: Dictionary = {
     items: [
       {
         title: "Técnica.",
-        text: "Licencias emitidas por los propios fabricantes e instituciones de formación: Corona Fire Department, LION University y Texas A&M TEEX. Capacitación anual en el extranjero desde 2014.",
+        text: "Licencias emitidas por los propios fabricantes e instituciones de formación: Corona Fire Department, LION University, Texas A&M TEEX e International Stabilization University. Capacitación anual en el extranjero desde 2014.",
       },
       {
         title: "Financiera.",
