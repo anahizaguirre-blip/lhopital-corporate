@@ -311,7 +311,7 @@ export const PRIVACY_ES: PrivacyBlock[] = [
       ],
       [
         {
-          "text": "Teléfono: (55) 9462 1951, en horario de 11:00 a 14:00 y de 16:00 a 19:00 horas, en días hábiles."
+          "text": "Teléfono: +52 (55) 9462 1951. Horario de atención: Lunes a viernes 11:00–14:00 y 16:00–19:00 · Sábado 11:00–14:00."
         }
       ]
     ]
@@ -467,6 +467,6 @@ export const PRIVACY_ES: PrivacyBlock[] = [
   },
   {
     "type": "heading",
-    "text": "Última actualización: 22 de octubre de 2026"
+    "text": "Última actualización: 9 de noviembre de 2026"
   }
 ];
