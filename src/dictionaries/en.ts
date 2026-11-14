@@ -77,7 +77,7 @@ const en: Dictionary = {
       supervac: { origin: "USA", type: "Exclusive distribution" },
       hexarmor: { origin: "USA", type: "Authorized distribution" },
       lion: { origin: "USA", type: "Authorized distribution" },
-      hedon: { origin: "United Kingdom", type: "Exclusive distribution" },
+      hedon: { origin: "United Kingdom", type: "Exclusive distributor" },
       beeline: { origin: "United Kingdom", type: "Exclusive distributor" },
       tees: { origin: "Mexico", type: "Own brand" },
     },
