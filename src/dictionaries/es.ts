@@ -78,7 +78,7 @@ const es: Dictionary = {
       hexarmor: { origin: "EE. UU.", type: "Distribución autorizada" },
       lion: { origin: "EE. UU.", type: "Distribución autorizada" },
       hedon: { origin: "Reino Unido", type: "Distribución exclusiva" },
-      beeline: { origin: "Reino Unido", type: "Distribuidor máster" },
+      beeline: { origin: "Reino Unido", type: "Distribuidor exclusiva" },
       tees: { origin: "México", type: "Marca propia" },
     },
   },
