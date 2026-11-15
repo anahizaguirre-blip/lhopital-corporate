@@ -51,7 +51,7 @@ export function jsonLd(lang: Locale) {
         name: "Lhopital S.A. de C.V.",
         alternateName: "Lhopital",
         url: SITE_URL,
-        logo: `${SITE_URL}/logo.png`,
+        logo: "https://res.cloudinary.com/lhopital-moto/image/upload/logo.png",
         foundingDate: "2021",
         slogan: "We Are The Standard",
         sameAs: [...SOCIAL.fr, ...SOCIAL.moto].map((s) => s.href),

@@ -74,7 +74,7 @@ body {
   inset: 0;
   pointer-events: none;
   opacity: 0.35;
-  background-image: url("/textures/grain.png");
+  background-image: url("https://res.cloudinary.com/lhopital-moto/image/upload/grain.png");
   background-size: 64px 64px;
 }
 

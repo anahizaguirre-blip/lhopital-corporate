@@ -51,7 +51,7 @@ const en: Dictionary = {
       },
       {
         title: "Origin",
-        text: "We work directly with the manufacturer—as an exclusive, master, or authorized distributor—never through intermediaries.",
+        text: "We work directly with the manufacturer—as an exclusive or authorized distributor—never through intermediaries.",
       },
       {
         title: "Training",
