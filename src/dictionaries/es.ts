@@ -51,7 +51,7 @@ const es: Dictionary = {
       },
       {
         title: "Origen",
-        text: "Trabajamos directo con el fabricante, como distribuidor exclusivo, máster o autorizado. Nunca por intermediarios.",
+        text: "Trabajamos directo con el fabricante, como distribuidor exclusivo o autorizado. Nunca por intermediarios.",
       },
       {
         title: "Respaldo",

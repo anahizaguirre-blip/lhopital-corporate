@@ -6,7 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         bg: "#111111",
-        gold: "#C9A84C",
+        gold: "#C9A961",
         text: "#F5F5F5",
         muted: "#8A8A8A",
       },
