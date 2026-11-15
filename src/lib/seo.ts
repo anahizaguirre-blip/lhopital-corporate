@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { getDictionary } from "@/dictionaries";
 import { ADDRESS, CONTACT, DIVISION_URLS, SITE_URL, SOCIAL, type Locale } from "./site";
 
+// Imagen Open Graph en Cloudinary (generada con scripts/build-og.cjs y subida como og-image-v2).
+const OG_IMAGE = "https://res.cloudinary.com/lhopital-moto/image/upload/og-image-v2.png";
+
 const HREFLANG: Record<Locale, string> = { es: "es-MX", en: "en-US" };
 
 // Metadatos con canónica y alternates hreflang. `paths` es la ruta (sin dominio) en cada idioma.
@@ -29,13 +32,13 @@ export function buildMetadata(lang: Locale, paths: Record<Locale, string>, title
       description: t.description,
       locale: t.ogLocale,
       alternateLocale: getDictionary(other).meta.ogLocale,
-      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "WATS — We Are The Standard" }],
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "WATS — We Are The Standard" }],
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description: t.description,
-      images: ["/og-image.png"],
+      images: [OG_IMAGE],
     },
   };
 }
@@ -75,7 +78,7 @@ export function jsonLd(lang: Locale) {
         "@id": `${SITE_URL}/#localbusiness`,
         name: "Lhopital S.A. de C.V.",
         url: `${SITE_URL}/${lang}`,
-        image: `${SITE_URL}/og-image.png`,
+        image: OG_IMAGE,
         telephone: "+52 55 9462 1951",
         parentOrganization: { "@id": orgId },
         address: {

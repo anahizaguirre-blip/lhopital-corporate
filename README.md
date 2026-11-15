@@ -41,7 +41,7 @@ Para cambiar una foto o un logo, súbelo a Cloudinary y actualiza su public ID e
 
 - `public/brand/wats-seal.svg` — sello WATS v4 (copia de `wats_monogram_lhopital_v4_contornos` en Cloudinary), letras en contornos
 - `src/lib/wats-paths.ts` — los trazos de las letras extraídos de ese SVG, para el sello animado del hero
-- `public/og-image.png` — imagen Open Graph de 1200×630
+- `public/og-image.png` — imagen Open Graph de 1200×630 (no se versiona: se genera con `build-og.cjs` y se sube a Cloudinary con un ID nuevo, hoy `og-image-v2`)
 - Textura de grano: en Cloudinary (`grain`); `scripts/build-grain.cjs` la regenera en `public/textures/` para volver a subirla
 
 Para regenerarlos:
