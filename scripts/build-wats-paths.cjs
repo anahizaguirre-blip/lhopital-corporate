@@ -1,5 +1,5 @@
-// Extracts the outlined glyph paths from public/brand/wats-seal.svg (the WATS v3 seal,
-// source: Cloudinary "wats_monogram_lhopital_v3_contornos") into src/lib/wats-paths.ts,
+// Extracts the outlined glyph paths from public/brand/wats-seal.svg (the WATS v4 seal,
+// source: Cloudinary "wats_monogram_lhopital_v4_contornos") into src/lib/wats-paths.ts,
 // so the hero can draw the seal inline and animate it.
 // Usage: npm run build:assets
 const fs = require('fs');

@@ -1,9 +1,9 @@
 import { WATS_PATHS } from "@/lib/wats-paths";
 
-const GOLD = "#C9A84C";
+const GOLD = "#C9A961";
 const BG = "#111111";
 const TEXT = "#F5F5F5";
-const MUTED = "#8C8C8C";
+const MUTED = "#8A8A8A";
 
 type Props = {
   // "full": tarjeta completa con lema y LHOPITAL. "mark": solo el emblema octagonal.
@@ -13,7 +13,7 @@ type Props = {
   title?: string;
 };
 
-// Sello WATS v3 (Cloudinary: wats_monogram_lhopital_v3_contornos), dibujado en línea para
+// Sello WATS v4 (Cloudinary: wats_monogram_lhopital_v4_contornos), dibujado en línea para
 // poder animarlo. Letras como contornos: sin <text> ni máscara. Misma geometría que
 // public/brand/wats-seal.svg; los trazos vienen de src/lib/wats-paths.ts.
 export default function WatsSeal({ variant = "full", animated = false, className, title }: Props) {
